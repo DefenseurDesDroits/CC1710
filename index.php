@@ -33,7 +33,7 @@
 
 		<header>
 			<div class='flow'>
-				<h1><a href='http://www.defenseurdesdroits.fr/' title='Se rendre sur le site du Défenseur des droits'><img src='img/logo.svg' alt='Logo' />Défenseur des droits</a></h1>
+				<h1><a href='https://www.defenseurdesdroits.fr/' title='Se rendre sur le site du Défenseur des droits'><img src='img/logo.svg' alt='Logo' />Défenseur des droits</a></h1>
 				<div id="majeure"></div><!-- end #majeure -->
 			</div><!-- end .flow -->
 		</header>
@@ -50,8 +50,8 @@
 					</article><!-- end #saisine -->
 
 					<article id='deleg'>
-						<a href='./?l=DEL' id='saisir-img' class='icone godeleg'><img src='img/deleg.svg' alt='Icône délégué·e·s' /></a>
-						<p class='methode'>En rencontrant un·e délégué·e</p>
+						<a href='./?l=DEL' id='saisir-img' class='icone godeleg'><img src='img/deleg.svg' alt='Icône délégués' /></a>
+						<p class='methode'>En rencontrant un délégué</p>
 						<p class='action'><a href='./?l=DEL' class='godeleg' id='godeleg'>Contacter</a></p>
 					</article><!-- end #saisine -->
 
@@ -99,9 +99,9 @@
 					<ul>
 						<li id="twit"><a href="https://twitter.com/Defenseurdroits" target="_blank" title="Se rendre sur la page Twitter du Défenseur des droits"><img src="img/twit.png">@Defenseurdroits</a></li>
 						<li id="fab"><a href="https://facebook.com/DefenseurdesDroits" target="_blank" title="Se rendre sur la page Facebook du Défenseur des droits"><img src="img/fab.png">facebook.com/defenseurdesdroits</a></li>
-						<li><a href="http://defenseurdesdroits.fr" target="_blank" title="Se rendre sur le site du Défenseur des droits">defenseurdesdroits.fr</a></li>
-						<li id="presscontain"><a target="_blank" href="http://www.defenseurdesdroits.fr/presse/dossiers-de-presse">Presse</a></li>
-						<li id="legalcontain"><a target="_blank" href="http://www.defenseurdesdroits.fr/mentions-légales">Mentions légales</a></li>
+						<li><a href="https://www.defenseurdesdroits.fr" target="_blank" title="Se rendre sur le site du Défenseur des droits">defenseurdesdroits.fr</a></li>
+						<li id="presscontain"><a target="_blank" href="https://www.defenseurdesdroits.fr/presse/dossiers-de-presse">Presse</a></li>
+						<li id="legalcontain"><a target="_blank" href="https://www.defenseurdesdroits.fr/mentions-légales">Mentions légales</a></li>
 					</ul>
 				</nav>
 				&nbsp;
@@ -116,6 +116,6 @@
 	</script>
 	<script src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
-	<script>window.cookieconsent.initialise({"palette":{"popup":{"background":"#ffffff","text":"#000000"},"button":{"background":"#0080c9","text":"#ffffff"}},"theme":"edgeless","position":"top","static":true,"content":{"message":"Ce site utilise des cookies à des fins statistiques.","dismiss":"OK","link":"En savoir plus","href":"http://www.defenseurdesdroits.fr/mentions-l%C3%A9gales"}});</script>
+	<script>window.cookieconsent.initialise({"palette":{"popup":{"background":"#ffffff","text":"#000000"},"button":{"background":"#0080c9","text":"#ffffff"}},"theme":"edgeless","position":"top","static":true,"content":{"message":"Ce site utilise des cookies à des fins statistiques.","dismiss":"OK","link":"En savoir plus","href":"https://www.defenseurdesdroits.fr/mentions-l%C3%A9gales"}});</script>
 	</body>
 </html>
