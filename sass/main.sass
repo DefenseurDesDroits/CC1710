@@ -1,0 +1,609 @@
+// main.sass - the stylesheet of the landing pages
+
+@import reset
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Oswald'
+
+// @VARIABLES
+
+$bfont: 'Open Sans', Arial, sans-serif
+$hfont: 'Oswald', Arial, sans-serif
+
+$blue: rgb(0,128,201)
+$MSP: rgb(0,154,128)
+$MDE: rgb(255,198,27)
+$MLD: rgb(208,38,50)
+$MDS: rgb(117,81,149)
+$gray: rgb(227,231,235)
+
+// @GLOBAL
+html,
+body
+	font: 10px $bfont
+	height: 100%
+	width: 100%
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font: 160% $hfont
+	line-height: 1
+	text-transform: uppercase
+
+a
+	text-decoration: none
+
+hr.clear
+	height: 0
+	border: none
+	clear: both
+
+.flow
+	width: 100%
+	max-width: 960px
+	box-sizing: border-box
+	padding: 0 10px
+	margin: 0 auto
+
+// ------------------------ @HEADER //////////////////////////////////
+
+header
+	position: relative
+	min-height: 600px
+	padding: 25px 0
+	box-sizing: border-box
+
+	.flow
+		height: 100%
+		box-sizing: border-box
+
+	h1
+		margin-bottom: 60px
+
+		a
+			color: transparent
+			font-size: 0
+
+			img
+				width: 250px
+				height: auto
+
+#vbg-container
+	position: absolute
+	z-index: -1
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	overflow: hidden
+	background: no-repeat center/cover
+	//background-image: url('../img/visu.png')
+
+	#vbg
+		position: relative
+		min-width: 100%
+		min-height: 100%
+		filter: blur(5px)
+	
+	#vbg-overlay
+		position: absolute
+		z-index: 1
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		background-color: rgba(255,255,255,0.7)
+
+#vbg-container.MDE
+	background-image: url('../img/visu_MDE.jpg')
+
+#vbg-container.MSP
+	background-image: url('../img/visu_MSP.jpg')
+
+#vbg-container.MLD
+	background-image: url('../img/visu_MLD.jpg')
+
+#vbg-container.MLDe
+	background-image: url('../img/visu_MLDe.jpg')
+
+#vbg-container.MLDl
+	background-image: url('../img/visu_MLDl.jpg')
+
+#majeure
+
+	h2
+		text-align: right
+		color: $blue
+		font-size: 6.2em
+		font-weight: 600
+		line-height: 1.3
+		margin-bottom: 20px
+
+	.domaine
+		h2
+			span
+				color: white
+				padding: 0px 20px
+
+	h3
+		text-align: right
+		color: $blue
+		font-size: 3em
+
+	#MAJ-MDE
+		h2
+			span
+				background-color: $MDE
+
+	#MAJ-MLD
+		h2
+			span
+				background-color: $MLD
+
+	#MAJ-MSP
+		h2
+			span
+				background-color: $MSP
+
+	#MAJ-MDS
+		h2
+			span
+				background-color: $MDS
+	
+	.content
+		text-align: right
+		font-size: 1.8em
+		font-weight: 600
+		margin-top: 20px
+
+// ------------------------ @CTA //////////////////////////////////
+
+#CTA-container
+	background-color: $blue
+	padding: 35px 0
+	box-sizing: border-box
+
+	h3
+		text-align: center
+		width: 100%
+		font-size: 3.6em
+		margin-bottom: 35px
+
+		span
+			padding: 10px 20px
+			background-color: transparent
+			color: white
+			font-weight: bold
+			line-height: 1.7
+
+	article
+		display: inline-block
+		min-width: calc(100% / 4 - 4px)
+		max-width: calc(100% - 1px)
+		width: calc((620px - 100%) * 620)
+		vertical-align: top
+		text-align: center
+		margin-bottom: 50px
+		
+		.icone
+			display: block
+			margin-bottom: 10px
+			
+			img
+				width: 40%
+				height: auto
+		
+		.methode
+			color: white
+			font-size: 1.4em
+			font-weight: 600
+			margin-bottom: 10px
+
+		.action
+			color: white
+			font-size: 1.4em
+			font-weight: 300
+
+			a
+				background-color: white
+				color: $blue
+				padding: 0 15px
+				border-radius: 3px
+				font: 22px $hfont
+				text-transform: uppercase
+
+	#CTA
+		color: white
+
+		#howtodel
+			margin-bottom: 20px
+			font-size: 1.6em
+
+		form
+			text-align: center
+			input
+				font-size: 1.6em
+				border: 1px $blue solid
+				padding: 5px 15px
+			input[type=search]
+				width: 300px
+				border: 1px $gray solid
+				text-align: right
+			input[type=submit]
+				cursor: pointer
+				width: 50px
+				background: url('../img/search.svg') no-repeat center/60%
+				border-top-right-radius: 5px
+				border-bottom-right-radius: 5px
+				color: transparent
+
+// ------------------------ @DOMAINES //////////////////////////////////
+
+#mineures-container
+	.flow
+		max-width: 1000px
+		padding: 0
+
+		h2
+			margin: 50px auto 30px
+			width: 100%
+			text-align: center
+			font-size: 5em
+
+			span
+				background-color: $blue
+				color: white
+				padding: 10px 20px
+				font-weight: 600
+
+#mineures
+
+	.domaine
+		display: inline-block
+		margin: 20px
+		min-width: calc(50% - 42px)
+		max-width: calc(100% - 42px)
+		width: calc((620px - 100%) * 620)
+		vertical-align: top
+
+		.domain-illus
+			position: relative
+			height: 280px
+			border-bottom: 10px solid
+
+			h3
+				margin-top: 10px
+				padding: 5px 10px
+				color: white
+				display: inline-block
+				font-size: 2.2em
+				font-weight: 600
+				letter-spacing: 0.2em
+
+			button
+				position: absolute
+				bottom: 20px
+				left: 15px
+				background-color: white
+				border: 0
+				border-radius: 3px
+				padding: 3px 5px 5px
+				font-size: 1.4em
+				font-weight: 600
+				cursor: pointer
+
+		.more
+			width: 100%
+			box-sizing: border-box
+			padding: 10px
+			display: none
+			color: white
+
+			.intro
+				font-size: 1.4em
+				letter-spacing: 0.2em
+				font-weight: 600
+				margin-bottom: 20px
+
+			.content
+				font-size: 1.4em
+
+		.more.read
+			display: block
+
+	#MSP
+		background-color: $MSP
+
+		button
+			color: $MSP
+
+		.domain-illus
+			background: url('../img/MSP.jpg') no-repeat center/cover
+			border-color: $MSP
+
+			h3
+				background-color: $MSP
+
+		.more
+			background-color: $MSP
+
+	#MDE
+		background-color: $MDE
+
+		button
+			color: $MDE
+
+		.domain-illus
+			background: url('../img/MDE.jpg') no-repeat center/cover
+			border-color: $MDE
+
+			h3
+				background-color: $MDE
+
+		.more
+			background-color: $MDE
+
+	#MLD
+		background-color: $MLD
+
+		button
+			color: $MLD
+
+		.domain-illus
+			background: url('../img/MLD.jpg') no-repeat center/cover
+			border-color: $MLD
+
+			h3
+				background-color: $MLD
+
+		.more
+			background-color: $MLD
+
+	#MDS
+		background-color: $MDS
+
+		button
+			color: $MDS
+
+		.domain-illus
+			background: url('../img/MDS.jpg') no-repeat center/cover
+			border-color: $MDS
+
+			h3
+				background-color: $MDS
+
+		.more
+			background-color: $MDS
+
+// ------------------------ @STRUCTURES //////////////////////////////////
+
+#noresult
+	padding: 20px
+	font-size: 2em
+	text-align: center
+
+#structures
+	margin: 45px 20px
+
+	.structure
+		margin-bottom: 40px
+		padding-bottom: 40px
+		border-bottom: 1px solid #CCCCCC
+
+		h4
+			font-size: 2.2em
+
+			span
+				color: $blue
+
+		.strucinfos
+			font-size: 1.4em
+
+		.delegs
+			padding-left: 20px
+			font-size: 1.4em
+
+			.deleg
+				margin-top: 10px
+				margin-bottom: 20px
+				font-size: 1.2em
+
+				.perms
+					padding-left: 20px
+					margin-bottom: 10px
+					font-size: 0.8em
+
+					.perm
+						text-transform: lowercase
+
+				.delcontact
+					font-family: $hfont
+					color: white
+					text-transform: uppercase
+					background-color: $blue
+					padding: 3px 10px
+
+			.deleg:last-of-type
+				margin-bottom: 10px
+
+	.structure:last-of-type
+		border-bottom: 0
+
+// ------------------------ @VISUS //////////////////////////////////
+
+#visu-container
+
+	.flow
+		margin-top: 10px
+		padding: 0 20px
+		padding-top: 30px
+		border-top: 1px solid $blue
+		max-width: 1000px
+		box-sizing: border-box
+
+		h3
+			margin: 20px auto 40px
+			text-align: center
+			font-size: 4em
+
+			span
+				background-color: $blue
+				color: white
+				padding: 10px 20px
+				font-weight: 600
+
+		#visu
+
+			.visuel
+				display: inline-block
+				margin: 0 20px 20px
+				min-width: calc(25% - 30px)
+				max-width: calc(100%)
+				width: calc((620px - 100%) * 620)
+				height: 150px
+				overflow: hidden
+
+				img
+					max-width: 100%
+
+			.img3
+				min-width: calc(100% / 3 - 30px)
+				height: 200px
+
+			.visuel:first-of-type
+				margin-left: 0
+
+			.visuel:last-of-type
+				margin-right: 0
+
+// ------------------------ @VISUS //////////////////////////////////
+
+#video-container
+
+	.flow
+		padding: 0
+
+// ------------------------ @FOOTER //////////////////////////////////
+
+footer
+	background-color: $gray
+	margin-top: 20px
+	padding-top: 40px
+	font-size: 1.4em
+
+	nav
+		margin: 40px 0
+
+		ul
+			margin: 0 auto
+
+			li
+				padding: 5px 10px
+				position: relative
+				display: inline-block
+				border-right: 1px solid black
+				border-collapse: collapse
+
+				img
+					display: none
+
+				a
+					color: black
+					text-decoration: none
+
+			li:last-of-type
+				border-right: none
+
+			#twit,
+			#fab
+				img
+					width: 30px
+					display: inline-block
+					margin-right: 5px
+					vertical-align: middle
+
+
+// ------------------------ @MEDIA-QUERIES //////////////////////////////////
+
+@media only screen and (max-device-width : 960px)
+	#CTA-container
+		h3
+			span
+				display: block
+			
+			br
+				display: none
+
+	#video-container
+		.flow
+			padding: 0 10px
+
+			iframe
+				width: calc(100vw - 20px) !important
+				height: calc((100vw - 20px) * 540 / 960) !important
+				
+
+@media only screen and (max-device-width : 800px)
+	header
+		h2
+			font-size: 4em !important
+		h3
+			font-size: 2em !important
+		
+
+	#CTA-container
+		h3
+			font-size: 2.8em !important
+	
+	.domaine
+		button
+			font-size: 2.2em !important
+
+	#visu-container
+		h3
+			font-size: 2.8em !important
+
+	footer
+		nav
+			ul
+				li
+					text-align: center
+
+					a
+						color: black
+
+					img
+						display: none
+
+@media only screen and (max-device-width : 620px)
+	header
+		h2
+			font-size: 2.2em !important
+		h3
+			font-size: 1.6em !important
+
+	#CTA-container
+		h3
+			font-size: 2.2em !important
+
+		.action
+			a
+				font-size: 2.2em !important
+				
+	#mineures-container
+		h2
+			font-size: 2.6em !important
+
+	.domaine
+		button
+			font-size: 2.2em !important
+
+	#visu-container
+		h3
+			font-size: 1.5em !important
+
+		.visuel
+			margin: 0 0 20px !important
+			height: 60vw !important
