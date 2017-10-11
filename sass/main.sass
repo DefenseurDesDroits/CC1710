@@ -1,18 +1,19 @@
 // main.sass - the stylesheet of the landing pages
 
 @import reset
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Oswald'
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300,400,500,600,700,800,900'
 
 // @VARIABLES
 
 $bfont: 'Open Sans', Arial, sans-serif
-$hfont: 'Oswald', Arial, sans-serif
+$hfont: 'Work Sans', Arial, sans-serif
 
 $blue: rgb(0,128,201)
 $MSP: rgb(0,154,128)
 $MDE: rgb(255,198,27)
 $MLD: rgb(208,38,50)
 $MDS: rgb(117,81,149)
+$MLA: rgb(240, 125, 23)
 $gray: rgb(227,231,235)
 
 // @GLOBAL
@@ -151,6 +152,11 @@ header
 		h2
 			span
 				background-color: $MDS
+
+	#MAJ-MLA
+		h2
+			span
+				background-color: $MLA
 	
 	.content
 		text-align: right
@@ -261,11 +267,10 @@ header
 #mineures
 
 	.domaine
-		display: inline-block
 		margin: 20px
 		min-width: calc(50% - 42px)
 		max-width: calc(100% - 42px)
-		width: calc((620px - 100%) * 620)
+		width: 100%
 		vertical-align: top
 
 		.domain-illus
@@ -285,7 +290,7 @@ header
 			button
 				position: absolute
 				bottom: 20px
-				left: 15px
+				right: 15px
 				background-color: white
 				border: 0
 				border-radius: 3px
@@ -376,6 +381,22 @@ header
 
 		.more
 			background-color: $MDS
+
+	#MLA
+		background-color: $MLA
+
+		button
+			color: $MLA
+
+		.domain-illus
+			background: url('../img/MLA.jpg') no-repeat center/cover
+			border-color: $MLA
+
+			h3
+				background-color: $MLA
+
+		.more
+			background-color: $MLA
 
 // ------------------------ @STRUCTURES //////////////////////////////////
 
