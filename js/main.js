@@ -289,8 +289,8 @@ function renderDel(delegates){
         var delpermlist = document.createElement('ul');
         delpermlist.className = 'perms';
   
-        delitem.permanences.sortOn('day');
-        delitem.permanences.map(function(delperm){
+        delitem.duty.sortOn('day');
+        delitem.duty.map(function(delperm){
           var delpermitem = document.createElement('li');
           delpermitem.className = 'perm';
           var delpermitemtxt = document.createTextNode(delperm.day+' : '+delperm.time);
