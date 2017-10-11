@@ -343,83 +343,69 @@ header {
       position: absolute;
       bottom: 20px;
       right: 15px;
-      background-color: white;
+      background-color: #0080c9;
+      color: white;
       border: 0;
       border-radius: 3px;
-      padding: 3px 5px 5px;
+      padding: 6px 10px 10px;
       font-size: 1.4em;
       font-weight: 600;
       cursor: pointer; }
   #mineures .domaine .more {
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
     display: none;
-    color: white; }
+    border: 2px solid; }
     #mineures .domaine .more .intro {
       font-size: 1.4em;
       letter-spacing: 0.2em;
-      font-weight: 600;
-      margin-bottom: 20px; }
+      padding: 5px 10px 15px;
+      font-weight: 600; }
     #mineures .domaine .more .content {
-      font-size: 1.4em; }
+      font-size: 1.4em;
+      padding: 10px; }
   #mineures .domaine .more.read {
     display: block; }
-#mineures #MSP {
-  background-color: #009a80; }
-  #mineures #MSP button {
-    color: #009a80; }
-  #mineures #MSP .domain-illus {
-    background: url("../img/MSP.jpg") no-repeat center/cover;
-    border-color: #009a80; }
-    #mineures #MSP .domain-illus h3 {
-      background-color: #009a80; }
-  #mineures #MSP .more {
+#mineures #MSP .domain-illus {
+  background: url("../img/MSP.jpg") no-repeat center/cover;
+  border-color: #009a80; }
+  #mineures #MSP .domain-illus h3 {
     background-color: #009a80; }
-#mineures #MDE {
-  background-color: #ffc61b; }
-  #mineures #MDE button {
-    color: #ffc61b; }
-  #mineures #MDE .domain-illus {
-    background: url("../img/MDE.jpg") no-repeat center/cover;
-    border-color: #ffc61b; }
-    #mineures #MDE .domain-illus h3 {
-      background-color: #ffc61b; }
-  #mineures #MDE .more {
+#mineures #MSP .more {
+  background-color: #009a80;
+  border-color: #009a80; }
+#mineures #MDE .domain-illus {
+  background: url("../img/MDE.jpg") no-repeat center/cover;
+  border-color: #ffc61b; }
+  #mineures #MDE .domain-illus h3 {
     background-color: #ffc61b; }
-#mineures #MLD {
-  background-color: #d02632; }
-  #mineures #MLD button {
-    color: #d02632; }
-  #mineures #MLD .domain-illus {
-    background: url("../img/MLD.jpg") no-repeat center/cover;
-    border-color: #d02632; }
-    #mineures #MLD .domain-illus h3 {
-      background-color: #d02632; }
-  #mineures #MLD .more {
+#mineures #MDE .more {
+  background-color: #ffc61b;
+  border-color: #ffc61b; }
+#mineures #MLD .domain-illus {
+  background: url("../img/MLD.jpg") no-repeat center/cover;
+  border-color: #d02632; }
+  #mineures #MLD .domain-illus h3 {
     background-color: #d02632; }
-#mineures #MDS {
-  background-color: #755195; }
-  #mineures #MDS button {
-    color: #755195; }
-  #mineures #MDS .domain-illus {
-    background: url("../img/MDS.jpg") no-repeat center/cover;
-    border-color: #755195; }
-    #mineures #MDS .domain-illus h3 {
-      background-color: #755195; }
-  #mineures #MDS .more {
+#mineures #MLD .more {
+  background-color: #d02632;
+  border-color: #d02632; }
+#mineures #MDS .domain-illus {
+  background: url("../img/MDS.jpg") no-repeat center/cover;
+  border-color: #755195; }
+  #mineures #MDS .domain-illus h3 {
     background-color: #755195; }
-#mineures #MLA {
-  background-color: #f07d17; }
-  #mineures #MLA button {
-    color: #f07d17; }
-  #mineures #MLA .domain-illus {
-    background: url("../img/MLA.jpg") no-repeat center/cover;
-    border-color: #f07d17; }
-    #mineures #MLA .domain-illus h3 {
-      background-color: #f07d17; }
-  #mineures #MLA .more {
+#mineures #MDS .more {
+  background-color: #755195;
+  border-color: #755195; }
+#mineures #MLA .domain-illus {
+  background: url("../img/MLA.jpg") no-repeat center/cover;
+  border-color: #f07d17; }
+  #mineures #MLA .domain-illus h3 {
     background-color: #f07d17; }
+#mineures #MLA .more {
+  background-color: #f07d17;
+  border-color: #f07d17; }
 
 #noresult {
   padding: 20px;
