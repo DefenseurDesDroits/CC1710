@@ -79,7 +79,7 @@ function renderPage(major, minors){
   majornode += "<p class='content'>"+majorcontent.content.replace(/\n/g, '<br />')+"</p>";
   majornode += "</article>\n";
   document.getElementById('majeure').innerHTML = majornode;
-  if(major == 'MDE' || major == 'MLD' || major == 'MDS' || major == 'MSP'){
+  if(major == 'MDE' || major == 'MLD' || major == 'MDS' || major == 'MSP' || major == 'MLA'){
     document.querySelector('header article.majeur').classList.toggle('domaine');
   }
 
@@ -138,14 +138,6 @@ function renderPage(major, minors){
     adaptVideoOffset();
 
     document.getElementById('vbg').play();
-
-    var visuh = document.createElement('h3');
-    var visuspan = document.createElement('span');    
-    var visuhtxt = document.createTextNode('Les visuels de la campagne');
-    visuspan.appendChild(visuhtxt);
-    visuh.appendChild(visuspan);    
-    document.querySelector('#visu-container .flow').appendChild(visuh);
-    renderVisu(['MSP', 'MDE', 'MLDe', 'MLDl']);
   }else{
     var videowrp = document.createElement('div');
     videowrp.id = 'vbg-container';
@@ -163,30 +155,6 @@ function renderPage(major, minors){
       }
     }else{
       document.getElementById('vbg-container').classList.toggle(major);
-    }
-
-    var visuh = document.createElement('h3');
-    var visuspan = document.createElement('span');
-    var visuhtxt = document.createTextNode('Les autres visuels de la campagne');
-    visuspan.appendChild(visuhtxt);
-    visuh.appendChild(visuspan);
-    document.querySelector('#visu-container .flow').appendChild(visuh);
-
-    switch(landingPage){
-      case 'MSP':
-        renderVisu(['MDE', 'MLDe', 'MLDl']);
-        break;
-      case 'MDE':
-        renderVisu(['MSP', 'MLDe', 'MLDl']);
-        break;
-      case 'MLD':
-        if(crea){
-          if(crea == 'e'){renderVisu(['MSP', 'MDE', 'MLDl']);}
-          if(crea == 'l'){renderVisu(['MSP', 'MDE', 'MLDe']);}          
-        }else{
-          renderVisu(['MSP', 'MDE', 'MLDe', 'MLDl']);
-        }
-        break;
     }
   }
 
@@ -207,39 +175,11 @@ function renderPage(major, minors){
         });
       });
     }else{
-      document.querySelector('#mineures-container h2').innerHTML = '<span>Tou·te·s les délégué·e·s</span>';
+      document.querySelector('#mineures-container h2').innerHTML = '<span>Tous les délégués</span>';
     }
   }
 
 } // end renderPage()
-
-function renderVisu(visus){
-
-  var visuels = document.createElement('div');
-  visuels.id = 'visu';
-  visus.map(function(visu){
-
-    var visuel = document.createElement('a');
-
-    if(visus.length > 3){
-      visuel.className = 'visuel img4';
-    }else{
-      visuel.className = 'visuel img3';
-    }
-    if(visu.length > 3){
-      visuel.href = './?l='+visu.substring(0,3)+'&c='+visu.substring(3,4);
-    }else{
-      visuel.href = './?l='+visu;
-    }
-    var visuelimg = document.createElement('img');
-    visuelimg.src = 'img/visu_'+visu+'.jpg';
-
-    visuel.appendChild(visuelimg);
-    visuels.appendChild(visuel);
-  });
-  document.querySelector('#visu-container .flow').appendChild(visuels);
-
-} // end renderVisu()
 
 function adaptVideoOffset(){
   if(landingPage == 'GEN' || landingPage == 'DEL'){
@@ -396,17 +336,20 @@ switch(landingPage){
     initDel();
     break;
   case 'MLD':
-    renderPage('MLD',['MSP','MDE','MLD','MDS']);
+    renderPage('MLD',['MSP','MDE','MLD','MDS','MLA']);
     break;
   case 'MDE':
-    renderPage('MDE',['MSP','MDE','MLD','MDS']);
+    renderPage('MDE',['MSP','MDE','MLD','MDS','MLA']);
     break;
   case 'MDS':
-    renderPage('MDS',['MSP','MDE','MLD','MDS']);
+    renderPage('MDS',['MSP','MDE','MLD','MDS','MLA']);
     break;
   case 'MSP':
-    renderPage('MSP',['MSP','MDE','MLD','MDS']);
+    renderPage('MSP',['MSP','MDE','MLD','MDS','MLA']);
+    break;
+  case 'MLA':
+    renderPage('MLA',['MSP','MDE','MLD','MDS','MLA']);
     break;
   default:
-    renderPage('GEN',['MSP','MDE','MLD','MDS']);
+    renderPage('GEN',['MSP','MDE','MLD','MDS','MLA']);
 } // end switch landingPage

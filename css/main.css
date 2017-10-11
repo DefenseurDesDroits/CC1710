@@ -323,8 +323,6 @@ header {
 
 #mineures .domaine {
   margin: 20px;
-  min-width: calc(50% - 42px);
-  max-width: calc(100% - 42px);
   width: 100%;
   vertical-align: top; }
   #mineures .domaine .domain-illus {
@@ -360,7 +358,8 @@ header {
       font-size: 1.4em;
       letter-spacing: 0.2em;
       padding: 5px 10px 15px;
-      font-weight: 600; }
+      font-weight: 600;
+      color: white; }
     #mineures .domaine .more .content {
       font-size: 1.4em;
       padding: 10px; }
@@ -372,7 +371,6 @@ header {
   #mineures #MSP .domain-illus h3 {
     background-color: #009a80; }
 #mineures #MSP .more {
-  background-color: #009a80;
   border-color: #009a80; }
 #mineures #MDE .domain-illus {
   background: url("../img/MDE.jpg") no-repeat center/cover;
@@ -380,7 +378,6 @@ header {
   #mineures #MDE .domain-illus h3 {
     background-color: #ffc61b; }
 #mineures #MDE .more {
-  background-color: #ffc61b;
   border-color: #ffc61b; }
 #mineures #MLD .domain-illus {
   background: url("../img/MLD.jpg") no-repeat center/cover;
@@ -388,7 +385,6 @@ header {
   #mineures #MLD .domain-illus h3 {
     background-color: #d02632; }
 #mineures #MLD .more {
-  background-color: #d02632;
   border-color: #d02632; }
 #mineures #MDS .domain-illus {
   background: url("../img/MDS.jpg") no-repeat center/cover;
@@ -396,7 +392,6 @@ header {
   #mineures #MDS .domain-illus h3 {
     background-color: #755195; }
 #mineures #MDS .more {
-  background-color: #755195;
   border-color: #755195; }
 #mineures #MLA .domain-illus {
   background: url("../img/MLA.jpg") no-repeat center/cover;
@@ -404,7 +399,6 @@ header {
   #mineures #MLA .domain-illus h3 {
     background-color: #f07d17; }
 #mineures #MLA .more {
-  background-color: #f07d17;
   border-color: #f07d17; }
 
 #noresult {
