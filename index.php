@@ -78,17 +78,6 @@
 			</div><!-- end .flow -->
 		</section><!-- end #mineures-container -->
 
-		<section id='visu-container'>
-			<div class='flow'>
-			</div><!-- end .flow -->
-		</section><!-- end #visu-container -->
-
-		<section id='video-container'>
-			<div class='flow'>
-				<iframe width="960" height="540" src="https://www.youtube-nocookie.com/embed/u5qmQbhnORY?rel=0&amp;controls=2&amp;showinfo=0&amp;theme=light&amp;autohide=1&amp;cc_load_policy=1&amp;fs=0&amp;iv_load_policy=3&amp;modestbranding=0" frameborder="0" allowfullscreen></iframe>
-			</div><!-- end .flow -->
-		</section><!-- end #video-container -->
-
 		<footer>
 			<div class="flow">
 				<nav>

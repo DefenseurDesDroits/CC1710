@@ -372,6 +372,8 @@ header {
     background-color: #009a80; }
 #mineures #MSP .more {
   border-color: #009a80; }
+  #mineures #MSP .more .intro {
+    background-color: #009a80; }
 #mineures #MDE .domain-illus {
   background: url("../img/MDE.jpg") no-repeat center/cover;
   border-color: #ffc61b; }
@@ -379,6 +381,8 @@ header {
     background-color: #ffc61b; }
 #mineures #MDE .more {
   border-color: #ffc61b; }
+  #mineures #MDE .more .intro {
+    background-color: #ffc61b; }
 #mineures #MLD .domain-illus {
   background: url("../img/MLD.jpg") no-repeat center/cover;
   border-color: #d02632; }
@@ -386,6 +390,8 @@ header {
     background-color: #d02632; }
 #mineures #MLD .more {
   border-color: #d02632; }
+  #mineures #MLD .more .intro {
+    background-color: #d02632; }
 #mineures #MDS .domain-illus {
   background: url("../img/MDS.jpg") no-repeat center/cover;
   border-color: #755195; }
@@ -393,6 +399,8 @@ header {
     background-color: #755195; }
 #mineures #MDS .more {
   border-color: #755195; }
+  #mineures #MDS .more .intro {
+    background-color: #755195; }
 #mineures #MLA .domain-illus {
   background: url("../img/MLA.jpg") no-repeat center/cover;
   border-color: #f07d17; }
@@ -400,6 +408,8 @@ header {
     background-color: #f07d17; }
 #mineures #MLA .more {
   border-color: #f07d17; }
+  #mineures #MLA .more .intro {
+    background-color: #f07d17; }
 
 #noresult {
   padding: 20px;
