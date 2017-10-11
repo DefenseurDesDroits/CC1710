@@ -100,7 +100,7 @@
 						<li id="twit"><a href="https://twitter.com/Defenseurdroits" target="_blank" title="Se rendre sur la page Twitter du Défenseur des droits"><img src="img/twit.png">@Defenseurdroits</a></li>
 						<li id="fab"><a href="https://facebook.com/DefenseurdesDroits" target="_blank" title="Se rendre sur la page Facebook du Défenseur des droits"><img src="img/fab.png">facebook.com/defenseurdesdroits</a></li>
 						<li><a href="https://www.defenseurdesdroits.fr" target="_blank" title="Se rendre sur le site du Défenseur des droits">defenseurdesdroits.fr</a></li>
-						<li id="presscontain"><a target="_blank" href="https://www.defenseurdesdroits.fr/presse/dossiers-de-presse">Presse</a></li>
+						<li id="presscontain"><a target="_blank" href="https://www.defenseurdesdroits.fr/presse/">Presse</a></li>
 						<li id="legalcontain"><a target="_blank" href="https://www.defenseurdesdroits.fr/mentions-légales">Mentions légales</a></li>
 					</ul>
 				</nav>
