@@ -158,10 +158,6 @@ function renderPage(major, minors){
     }
   }
 
-   if(major == 'GEN'){
-     document.querySelector('#CTA-container h3').innerHTML = '<span>Nous avons la réponse</span>';
-   }
-
   if(major == 'DEL'){
      document.querySelector('#mineures-container h2').innerHTML = '';
     if(dept){

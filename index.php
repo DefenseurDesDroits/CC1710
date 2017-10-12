@@ -36,7 +36,7 @@
 
 		<section id='CTA-container'>
 			<div class='flow'>
-				<h3><span>Vous pensez que vos droits n'ont pas été respectés ?</span><br /><span>Nous avons la réponse</span></h3>
+				<h3><span>Contactez nous :</span></h3>
 
 				<div id="CTA">
 					<article id='saisine'>
