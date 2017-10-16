@@ -149,7 +149,7 @@ function renderPage(major, minors){
       if(crea){
         document.getElementById('vbg-container').classList.toggle(major+crea);
       }else{
-        var creas = ['e','l'];
+        var creas = ['handi','harcel'];
         var crearand = creas[Math.floor(Math.random()*creas.length)];
         document.getElementById('vbg-container').classList.toggle(major+crearand);        
       }
@@ -217,7 +217,7 @@ function initDel(){
   delsearchnode.appendChild(deldatalist);
   var delsubmit = document.createElement('input');
   delsubmit.type = 'submit';
-  delsubmit.value = 'Rechercher vos délégué·e·s';
+  delsubmit.value = 'Rechercher vos délégués';
   delsearchnode.appendChild(delsubmit);  
 
   document.querySelector('#CTA-container h3').innerHTML = '<span>Recherchez les délégués de votre département :</span>';
