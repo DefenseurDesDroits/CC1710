@@ -118,16 +118,30 @@ function renderPage(major, minors){
     document.getElementById('mineures').innerHTML = minorsnodes;
   }
 
-  if(major == 'GEN' || major == 'DEL' || major == 'MDS' || major == 'MLA'){
+  if(major){
     var videowrp = document.createElement('div');
     videowrp.id = 'vbg-container';
     var video = document.createElement('video');
     video.id = 'vbg';
-    video.src = 'video.mp4';
     video.preload = 'auto';
     video.loop = true;
     video.muted = true;
     video.autoplay = true;
+
+    switch(major){
+      case 'MSP':
+        video.src = 'video-MSP.mp4';
+        break;
+      case 'MDE':
+        video.src = 'video-MDE.mp4';
+        break;
+      case 'MLD':
+        video.src = 'video-MLD.mp4';
+        break;
+      default:
+        video.src = 'video.mp4';
+        break;
+    }
 
     videowrp.appendChild(video);
     var videooverlay = document.createElement('div');
